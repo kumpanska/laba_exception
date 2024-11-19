@@ -38,6 +38,7 @@ namespace labaexceptiontask1
                 try
                 {
                     string[] lines = File.ReadAllLines(file);
+                    Operations(lines, file);
                 }
                 catch (IndexOutOfRangeException ex)
                 {
@@ -66,6 +67,7 @@ namespace labaexceptiontask1
                 int mult = checked(num1 * num2);
                 sum += mult;
                 count++;
+                AverageMultiplies();
             }
             catch(Exception ex)
             {
@@ -74,6 +76,10 @@ namespace labaexceptiontask1
 
             }
             }
+        public double AverageMultiplies()
+        {
+            return (double)sum / count;
+        }
     }
     internal class Program
     {

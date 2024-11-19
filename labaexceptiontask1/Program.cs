@@ -67,7 +67,7 @@ namespace labaexceptiontask1
                 int mult = checked(num1 * num2);
                 sum += mult;
                 count++;
-                AverageMultiplies();
+                Average();
             }
             catch(Exception ex)
             {
@@ -76,7 +76,7 @@ namespace labaexceptiontask1
 
             }
             }
-        public double AverageMultiplies()
+        public double Average()
         {
             return (double)sum / count;
         }

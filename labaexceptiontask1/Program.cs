@@ -34,8 +34,15 @@ namespace labaexceptiontask1
         public void ReadFiles()
         {
             foreach (string file in Files)
-            { 
-            
+            {
+                try
+                {
+                    string[] lines = File.ReadAllLines(file);
+                }
+                catch (IndexOutOfRangeException ex)
+                {
+                    Console.WriteLine($"File {file} doesn't contain enough data. {ex.Message}" );
+                }
             }
         }
     }

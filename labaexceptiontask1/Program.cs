@@ -31,6 +31,13 @@ namespace labaexceptiontask1
             this.badData = badData;
             this.overflowData = overflowData;
         }
+        public void ReadFiles()
+        {
+            foreach (string file in Files)
+            { 
+            
+            }
+        }
     }
     internal class Program
     {

@@ -69,7 +69,7 @@ namespace labaexceptiontask1
                 count++;
                 Average();
             }
-            catch(Exception ex)
+            catch(OverflowException ex)
             {
                 OverflowData.Add(file);
                 Console.WriteLine($"Overflow in file {file}: {ex.Message}");

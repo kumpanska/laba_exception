@@ -41,7 +41,17 @@ namespace labaexceptiontask1
                 }
                 catch (IndexOutOfRangeException ex)
                 {
-                    Console.WriteLine($"File {file} doesn't contain enough data. {ex.Message}" );
+                    Console.WriteLine($"File {file} doesn't contain data.{ex.Message}");
+                }
+                catch (FileNotFoundException ex)
+                {
+                    NoFiles.Add(file);
+                    Console.WriteLine($"File {file} is not found. {ex.Message}");
+                }
+                catch (FormatException ex)
+                {
+                    BadData.Add(file);
+                    Console.WriteLine($"Bad data: {ex.Message}");
                 }
             }
         }

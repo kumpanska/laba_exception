@@ -55,6 +55,12 @@ namespace labaexceptiontask1
                 }
             }
         }
+        int sum = 0;
+        int count = 0;
+        public void Operations(string[] lines, string file)
+        {
+
+        }
     }
     internal class Program
     {

@@ -93,7 +93,26 @@ namespace labaexceptiontask1
         {
             List<string> files = new List<string>
             {
-             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT"
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\10.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\11.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\12.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\13.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\14.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\15.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\16.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\17.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\18.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\19.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\20.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\21.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\22.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\23.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\24.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\25.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\26.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\27.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\28.txt",
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT\29.txt"
             };
             List<string> nofiles = new List<string>();
             List<string> badData = new List<string>();

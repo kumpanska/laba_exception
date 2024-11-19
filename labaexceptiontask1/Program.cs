@@ -59,8 +59,21 @@ namespace labaexceptiontask1
         int count = 0;
         public void Operations(string[] lines, string file)
         {
+            try
+            {
+                int num1 = Convert.ToInt32(lines[0]);
+                int num2 = Convert.ToInt32(lines[1]);
+                int mult = checked(num1 * num2);
+                sum += mult;
+                count++;
+            }
+            catch(Exception ex)
+            {
+                OverflowData.Add(file);
+                Console.WriteLine($"Overflow in file {file}: {ex.Message}");
 
-        }
+            }
+            }
     }
     internal class Program
     {

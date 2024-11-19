@@ -90,8 +90,19 @@ namespace labaexceptiontask1
     internal class Program
     {
         static void Main()
-        { 
-        
+        {
+            List<string> files = new List<string>
+            {
+             @"C:\c#labs\labaexceptiontask1\labaexceptiontask1\TXT"
+            };
+            List<string> nofiles = new List<string>();
+            List<string> badData = new List<string>();
+            List<string> overflowData = new List<string>();
+            DoFiles file = new DoFiles(files, nofiles, badData, overflowData);
+            file.ReadFiles();
+            file.CreateFiles();
+            double average = file.Average();
+            Console.WriteLine($"Average of  products: {average}");
         }
     }
 }

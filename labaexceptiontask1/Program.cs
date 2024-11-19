@@ -24,6 +24,13 @@ namespace labaexceptiontask1
         {
             get { return overflowData; }
         }
+        public DoFiles(List<string> files, List<string> nofiles, List<string> badData, List<string> overflowData)
+        {
+            this.files = files;
+            this.nofiles = nofiles;
+            this.badData = badData;
+            this.overflowData = overflowData;
+        }
     }
     internal class Program
     {

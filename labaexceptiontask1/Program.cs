@@ -80,6 +80,12 @@ namespace labaexceptiontask1
         {
             return (double)sum / count;
         }
+        public void CreateFiles()
+        {
+            File.WriteAllLines(@"C:\c#labs\labaexceptiontask1\labaexceptiontask1\no_file.txt", NoFiles);
+            File.WriteAllLines(@"C:\c#labs\labaexceptiontask1\labaexceptiontask1\bad_data.txt", BadData);
+            File.WriteAllLines(@"C:\c#labs\labaexceptiontask1\labaexceptiontask1\overflow.txt", OverflowData);
+        }
     }
     internal class Program
     {
